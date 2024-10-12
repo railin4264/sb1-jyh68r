@@ -1,0 +1,14 @@
+<ActionBar title="Progreso"></ActionBar>
+
+<ScrollView>
+  <StackLayout class="p-4">
+    <Label text="Tu progreso" class="text-xl font-bold mb-4"></Label>
+    <GridLayout rows="auto, auto" columns="*, *" class="mb-4">
+      <Label row="0" col="0" text="Ejercicios completados:" class="text-lg"></Label>
+      <Label row="0" col="1" [text]="exercisesCompleted" class="text-lg text-right"></Label>
+      <Label row="1" col="0" text="Calorías quemadas:" class="text-lg"></Label>
+      <Label row="1" col="1" [text]="caloriesBurned + ' kcal'" class="text-lg text-right"></Label>
+    </GridLayout>
+    <Button text="Volver al inicio" [nsRouterLink]="['/home']" class="btn btn-primary"></Button>
+  </StackLayout>
+</ScrollView>

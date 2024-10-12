@@ -1,0 +1,9 @@
+{
+  "name": "gesture-fit",
+  "version": "1.0.0",
+  "scripts": {
+    "build:android": "ns build android --release --key-store-path ./keystore --key-store-password YOUR_KEYSTORE_PASSWORD --key-store-alias YOUR_ALIAS --key-store-alias-password YOUR_ALIAS_PASSWORD",
+    "build": "npm run build:android"
+  },
+  ...
+}

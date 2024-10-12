@@ -1,0 +1,9 @@
+<ActionBar title="Ejercicio"></ActionBar>
+
+<GridLayout rows="auto, *, auto" class="p-4">
+  <Label row="0" [text]="currentExercise" class="text-xl font-bold mb-2"></Label>
+  <GridLayout row="1" class="exercise-area">
+    <Label [text]="feedbackMessage" class="text-lg text-center"></Label>
+  </GridLayout>
+  <Button row="2" text="Finalizar Ejercicio" (tap)="finishExercise()" class="btn btn-primary"></Button>
+</GridLayout>
